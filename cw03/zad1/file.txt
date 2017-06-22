@@ -1,0 +1,6 @@
+#ADRES krakow
+./test ADRES
+
+%Komentarz
+#ADRES
+./test ADRES

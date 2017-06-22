@@ -1,0 +1,446 @@
+Podany jest czas od ostatniego punktu kontrolnego.
+
+-------------------LIST_TEST_STATIC-------------------
+Starting program:
+real:1489361164045086
+user:0
+system:413
+
+After creating address book:
+real:26
+user:0
+system:26
+
+After adding records:
+real:76
+user:0
+system:76
+
+After searching (optimistic):
+real:4
+user:0
+system:5
+
+After searching (pesimistic):
+real:29
+user:0
+system:30
+
+After remove:
+real:5
+user:0
+system:5
+
+After sort:
+real:7825
+user:7422
+system:380
+
+
+-------------------LIST_TEST_SHARED-------------------
+Starting program:
+real:1489361285887776
+user:0
+system:588
+
+After creating address book:
+real:24
+user:0
+system:23
+
+After adding records:
+real:73
+user:0
+system:74
+
+After searching (optimistic):
+real:8
+user:0
+system:8
+
+After searching (pesimistic):
+real:48
+user:0
+system:48
+
+After remove:
+real:6
+user:0
+system:7
+
+After sort:
+real:8332
+user:8048
+system:257
+
+-------------------LIST_TEST_DYNAMIC-------------------
+Starting program:
+real:1489361408750017
+user:0
+system:755
+
+After creating address book:
+real:69
+user:0
+system:68
+
+After adding records:
+real:108
+user:0
+system:108
+
+After searching (optimistic):
+real:21
+user:0
+system:21
+
+After searching (pesimistic):
+real:54
+user:0
+system:55
+
+After remove:
+real:7
+user:0
+system:7
+
+After sort:
+real:9233
+user:9169
+system:17
+
+
+-------------------TREE_TEST_STATIC-------------------
+Starting program:
+real:1489361514865934
+user:0
+system:410
+
+After creating address book:
+real:32
+user:0
+system:32
+
+After adding records:
+real:66
+user:0
+system:67
+
+After searching (optimistic):
+real:53
+user:0
+system:53
+
+After searching (pesimistic):
+real:57
+user:0
+system:57
+
+After remove:
+real:8
+user:0
+system:9
+
+After sort:
+real:2479
+user:2024
+system:446
+
+
+-------------------TREE_TEST_SHARED-------------------
+SStarting program:
+real:1489361841641814
+user:401
+system:0
+
+After creating address book:
+real:28
+user:28
+system:0
+
+After adding records:
+real:67
+user:68
+system:0
+
+After searching (optimistic):
+real:55
+user:56
+system:0
+
+After searching (pesimistic):
+real:59
+user:60
+system:0
+
+After remove:
+real:10
+user:10
+system:0
+
+After sort:
+real:2433
+user:2428
+system:0
+
+
+
+-------------------TREE_TEST_DYNAMIC-------------------
+Starting program:
+real:1489361743073823
+user:862
+system:0
+
+After creating address book:
+real:49
+user:49
+system:0
+
+After adding records:
+real:94
+user:94
+system:0
+
+After searching (optimistic):
+real:114
+user:115
+system:0
+
+After searching (pesimistic):
+real:123
+user:123
+system:0
+
+After remove:
+real:34
+user:34
+system:0
+
+After sort:
+real:3112
+user:3097
+system:0
+
+Uzyskane wyniki pokazują, że nie ma istotnej różnicy w czasie wykonania między linkowaniem bibliotek statycznych i dynamicznych.
+Różnica pojawia się przy dynamicznym ładowaniu bibliotek. Widoczny jest wyraźny narzut na czas wykonania funkcji.
+
+-------------------OPTYMALIZACJA-------------------
+Jako przykładowego programu użyjemy programu testującego książkę adresową opartą na liscie (linkowaną statycznie).
+
+--------------O0:
+Starting program:
+real:1489362389837217
+user:408
+system:0
+
+After creating address book:
+real:34
+user:34
+system:0
+
+After adding records:
+real:70
+user:70
+system:0
+
+After searching (optimistic):
+real:4
+user:5
+system:0
+
+After searching (pesimistic):
+real:28
+user:28
+system:0
+
+After remove:
+real:4
+user:4
+system:0
+
+After sort:
+real:7605
+user:7586
+system:0
+
+O1:
+Starting program:
+real:1489362429784980
+user:0
+system:409
+
+After creating address book:
+real:16
+user:0
+system:16
+
+After adding records:
+real:83
+user:0
+system:84
+
+After searching (optimistic):
+real:5
+user:0
+system:5
+
+After searching (pesimistic):
+real:31
+user:0
+system:31
+
+After remove:
+real:5
+user:0
+system:6
+
+After sort:
+real:7572
+user:7096
+system:467
+
+O2:
+Starting program:
+real:1489362482107112
+user:0
+system:411
+
+After creating address book:
+real:20
+user:0
+system:20
+
+After adding records:
+real:63
+user:0
+system:63
+
+After searching (optimistic):
+real:5
+user:0
+system:6
+
+After searching (pesimistic):
+real:20
+user:0
+system:21
+
+After remove:
+real:7
+user:0
+system:7
+
+After sort:
+real:7899
+user:7471
+system:400
+
+O3:
+Starting program:
+real:1489362495808797
+user:0
+system:442
+
+After creating address book:
+real:20
+user:0
+system:20
+
+After adding records:
+real:77
+user:0
+system:78
+
+After searching (optimistic):
+real:17
+user:0
+system:17
+
+After searching (pesimistic):
+real:33
+user:0
+system:33
+
+After remove:
+real:3
+user:0
+system:4
+
+After sort:
+real:7696
+user:7227
+system:458
+
+Os:
+Starting program:
+real:1489362515794459
+user:442
+system:0
+
+After creating address book:
+real:33
+user:33
+system:0
+
+After adding records:
+real:52
+user:53
+system:0
+
+After searching (optimistic):
+real:16
+user:16
+system:0
+
+After searching (pesimistic):
+real:41
+user:41
+system:0
+
+After remove:
+real:6
+user:7
+system:0
+
+After sort:
+real:7487
+user:7468
+system:0
+
+Ofast:
+real:1489362551745739
+user:418
+system:0
+
+After creating address book:
+real:26
+user:26
+system:0
+
+After adding records:
+real:63
+user:63
+system:0
+
+After searching (optimistic):
+real:4
+user:4
+system:0
+
+After searching (pesimistic):
+real:29
+user:29
+system:0
+
+After remove:
+real:3
+user:4
+system:0
+
+After sort:
+real:7555
+user:7544
+system:0
+
+W przypadku tego programu optymalizacja -Os nieznacznie zredukowała czas wykonania.
+Nie widać istotnej różnicy w czasie wykonania między poziomami -O0-3.

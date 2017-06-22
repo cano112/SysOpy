@@ -1,0 +1,165 @@
+GENEROWANY PLIK: 3000 rekordów * 4B
+	SORT:
+		SYS:
+			real: 7.124s 7.122s	| 7,123s
+			user: 0.959s 0.986s	| 0,973s
+			sys:  6.158s 6.128s	| 6,143s
+		LIB:
+			real: 6.750s 6.707s	| 6,729s
+			user: 1.775s 1.820s	| 1,798s
+			sys:  4.969s 4.879s	| 4,924s
+	SHUFFLE:
+		SYS:
+			real: 0.023s 0.017s 0.024s 0.018s 0.016s	| 0,020s
+			user: 0.002s 0.001s 0.002s 0.001s 0.001s	| 0,001s
+			sys:  0.020s 0.016s 0.022s 0.016s 0.015s	| 0,018s
+		LIB:
+			real: 0.016s 0.025s 0.031s 0.033s 0.011s	| 0,023s
+			user: 0.007s 0.005s 0.005s 0.008s 0.002s	| 0,005s
+			sys:  0.009s 0.020s 0.026s 0.025s 0.009s	| 0,018s
+
+GENEROWANY PLIK: 5000 rekordów * 4B
+	SORT:
+		SYS:
+			real: 19.380s 19.587s	| 19,484s
+			user: 02.578s 02.624s	| 02,601s
+			sys:  16.784s 16.944s	| 16,864s
+		LIB:
+			real: 18.186s 18.188s	| 18,187s
+			user: 04.941s 04.969s	| 04,955s
+			sys:  13.226s 13.200s	| 13,213s
+	SHUFFLE:
+		SYS:
+			real: 0.037s 0.019s 0.014s 0.016s 0.030s	| 0,023s
+			user: 0.006s 0.005s 0.000s 0.001s 0.003s	| 0,003s
+			sys:  0.030s 0.015s 0.013s 0.015s 0.026s	| 0,020s
+		LIB:
+			real: 0.055s 0.029s 0.015s 0.039s 0.017s	| 0,031s
+			user: 0.008s 0.006s 0.003s 0.004s 0.001s	| 0,004s
+			sys:  0.046s 0.024s 0.012s 0.035s 0.016s	| 0,027s
+
+GENEROWANY PLIK: 1000 rekordów * 512B
+	SORT:
+		SYS:
+			real: 1.931s 1.939s	| 1,935s
+			user: 0.296s 0.299s	| 0,298s
+			sys:  1.631s 1.636s	| 1,634s	
+		LIB:
+			real: 1.912s 2.018s	| 1,965s
+			user: 0.565s 0.661s	| 0,613s
+			sys:  1.344s 1.354s	| 1,349s
+	SHUFFLE:
+		SYS:
+			real: 0.009s 0.005s 0.005s 0.004s 0.007s	| 0,006s	 
+			user: 0.000s 0.001s 0.002s 0.000s 0.001s	| 0,001s
+			sys:  0.009s 0.004s 0.003s 0.004s 0.005s	| 0,005s
+		LIB:
+			real: 0.021s 0.012s 0.005s 0.008s 0.006s	| 0,010s
+			user: 0.004s 0.002s 0.000s 0.002s 0.000s	| 0,002s
+			sys:  0.017s 0.010s 0.005s 0.006s 0.006s 	| 0,009s
+
+GENEROWANY PLIK: 5000 rekordów * 512B
+	SORT:
+		SYS:
+			real: 20.674s 20.775s	| 20,725s
+			user: 03.224s 03.340s	| 03,282s
+			sys:  17.418s 17.405s	| 17,412s
+		LIB:
+			real: 20.254s 20.371s	| 20,313s
+			user: 06.199s 06.367s	| 06,283s
+			sys:  14.024s 13.976s	| 14,000s
+	SHUFFLE:
+		SYS:
+			real: 0.037s 0.013s 0.014s 0.014s 0.021s	| 0,020s
+			user: 0.001s 0.001s 0.000s 0.002s 0.003s	| 0,001s
+			sys:  0.036s 0.012s 0.014s 0.012s 0.016s	| 0,018s
+		LIB:
+			real: 0.044s 0.053s 0.018s 0.030s 0.017s	| 0,032s
+			user: 0.008s 0.013s 0.004s 0.006s 0.002s	| 0,007s
+			sys:  0.036s 0.040s 0.014s 0.024s 0.015s	| 0,026s
+
+GENEROWANY PLIK: 1000 rekordów * 4096B
+	SORT:
+		SYS:
+			real: 1.254s 1.201s	| 1,228s
+			user: 0.118s 0.137s	| 0,163s
+			sys:  1.134s 1.063s	| 1,099s
+		LIB:
+			real: 1.080s 1.093s	| 1,087s
+			user: 0.233s 0.250s	| 0,241s
+			sys:  0.845s 0.842s	| 0,844s
+	SHUFFLE:
+		SYS:
+			real: 0.011s 0.004s 0.004s 0.012s 0.004s	| 0,007s
+			user: 0.002s 0.000s 0.001s 0.001s 0.000s	| 0,001s
+			sys:  0.009s 0.004s 0.003s 0.011s 0.004s	| 0,006s
+		LIB:
+			real: 0.006s 0.006s 0.005s 0.004s 0.004s	| 0,005s
+			user: 0.002s 0.002s 0.001s 0.001s 0.001s	| 0,001s
+			sys:  0.004s 0.004s 0.004s 0.003s 0.003s	| 0,004s
+
+GENEROWANY PLIK: 2500 rekordów * 4096B
+	SORT:
+		SYS:
+			real: 8.187s 8.218s	| 8,203s
+			user: 0.858s 0.869s	| 0,864s
+			sys:  7.315s 7.332s	| 7,324s
+		LIB:
+			real: 7.309s 7.284s	| 7,297s
+			user: 1.543s 1.486s	| 1,515s
+			sys:  5.753s 5.786s	| 5,770s
+	SHUFFLE:
+		SYS:
+			real: 0.028s 0.009s 0.009s 0.013s 0.024s	| 0,017s
+			user: 0.001s 0.001s 0.001s 0.000s 0.000s	| 0,001s
+			sys:  0.027s 0.008s 0.008s 0.013s 0.023s	| 0,016s
+		LIB:
+			real: 0.028s 0.009s 0.015s 0.013s 0.016s	| 0,016s
+			user: 0.004s 0.003s 0.002s 0.005s 0.002s	| 0,003s
+			sys:  0.023s 0.006s 0.013s 0.007s 0.014s	| 0,013s
+
+GENEROWANY PLIK: 1000 rekordów * 8192B
+	SORT:
+		SYS:
+			real: 1.957s 1.956s	| 1,957s
+			user: 0.123s 0.113s	| 0,118s
+			sys:  1.831s 1.838s	| 1,835s
+		LIB:
+			real: 1.753s 1.776s	| 1,765s
+			user: 0.246s 0.238s	| 0,242s
+			sys:  1.502s 1.535s	| 1,519s
+	SHUFFLE:
+		SYS:
+			real: 0.007s 0.006s 0.006s 0.006s 0.007s	| 0,006s
+			user: 0.000s 0.000s 0.002s 0.001s 0.003s	| 0,001s
+			sys:  0.006s 0.006s 0.004s 0.005s 0.003s	| 0,005s
+		LIB:
+			real: 0.007s 0.007s 0.011s 0.006s 0.010s	| 0,008s
+			user: 0.000s 0.002s 0.002s 0.002s 0.000s	| 0,001s
+			sys:  0.007s 0.005s 0.009s 0.004s 0.008s	| 0,007s
+
+GENEROWANY PLIK: 3000 rekordów * 8192B
+	SORT:
+		SYS:
+			real: 19.580s 19.571s	| 19,576s
+			user: 01.199s 01.233s	| 01,216s
+			sys:  18.334s 18.299s	| 18,317s
+		LIB:
+			real: 17.065s 17.262s	| 17,164s
+			user: 02.153s 02.061s	| 02,107s
+			sys:  14.881s 15.169s	| 15,025s
+	SHUFFLE:
+		SYS:
+			real: 0.052s 0.019s 0.022s 0.020s 0.022s	| 0,027s
+			user: 0.002s 0.000s 0.000s 0.002s 0.002s	| 0,001s
+			sys:  0.050s 0.018s 0.022s 0.018s 0.020s	| 0,026s
+		LIB:
+			real: 0.019s 0.024s 0.018s 0.019s 0.020s	| 0,020s
+			user: 0.002s 0.002s 0.002s 0.003s 0.000s	| 0,002s
+			sys:  0.017s 0.022s 0.016s 0.016s 0.020s	| 0,018s
+
+Możemy zauważyć, że rzeczywisty czas wykonania programu jest w większości przypadków mniejszy, kiedy używamy funkcji bibliotecznych.
+W przypadku użycia funkcji systemowych możemy zauważyć większy czas wywołań systemowych, w stosunku do funkcji bibliotecznych,
+przy użyciu których obserwujemy zwiększony czas użytkownika.
+
+

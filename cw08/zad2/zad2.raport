@@ -1,0 +1,44 @@
+KOMPUTER      : Asus R510JK
+CPU           : Intel Core i7-4710HQ
+SYSTEM        : Fedora 25
+WERSJA JĄDRA  : 4.10.13-200.fc25.x86_64
+
+A:
+
+1. Wysłanie sygnału do procesu, gdy żaden wątek nie ma zamaskowanego tego sygnału:
+	
+	SIGUSR1: Zostaje wypisany komunikat "User defined signal 1", następnie proces kończy działanie.
+	SIGTERM: Zostaje wypisany komunikat "Terminated", następnie proces kończy swoje działanie.
+	SIGKILL: Zostaje wypisany komunikat "Killed", następnie proces kończy swoje działanie.
+	SIGSTOP: Zostaje wypisany komunikat "[1]+  Zatrzymano ./zad2 10 file.bin 10 z", następnie proces zostaje zatrzymany.	
+
+2. Wysłanie sygnału do procesu, gdy główny wątek programu ma zamaskowany ten sygnał, a wszystkie pozostałe wątki nie:
+
+	SIGUSR1: Sygnał zostaje zablokowany, program całkowicie go ignoruje.
+	SIGTERM: Sygnał zostaje zablokowany, program całkowicie go ignoruje.
+	SIGKILL: Zostaje wypisany komunikat "Killed", następnie proces kończy swoje działanie. Sygnału nie można zablokować.
+	SIGSTOP: Zostaje wypisany komunikat "[1]+  Zatrzymano ./zad2 10 file.bin 10 z", następnie proces zostaje zatrzymany. Sygnału nie można zablokować.
+
+3. Wysłanie sygnału do procesu, gdy wszystkie wątki mają zainstalowaną niestandardową procedurę obsługi przerwania, która wypisuje informację o nadejściu tego sygnału oraz PID i TID danego wątku:
+	
+	SIGUSR1: Zostaje wyświetlona informacja o przechwyceniu sygnału przez wątek główny. Program nie kończy działania.
+	SIGTERM: Zostaje wyświetlona informacja o przechwyceniu sygnału przez wątek główny. Program nie kończy działania.
+	SIGKILL: Zostaje wypisany komunikat "Killed", następnie proces kończy swoje działanie. Sygnału nie można przechwycić.
+	SIGSTOP: Zostaje wypisany komunikat "[1]+  Zatrzymano ./zad2 10 file.bin 10 z", następnie proces zostaje zatzymany. Sygnału nie można przechwycić.
+
+4. Wysłanie sygnału do wątku z zamaskowanym tym sygnałem:
+	
+	SIGUSR1: Sygnał zostaje zablokowany, wątek całkowicie go ignoruje.
+	SIGTERM: Sygnał zostaje zablkowoany, wątek całkowicie go ignoruje.
+	SIGKILL: Zostaje wypisany komunikat "Killed", następnie proces kończy swoje działanie. Sygnału nie można zablokować.
+	SIGSTOP: Zostaje wypisany komunikat "[1]+  Zatrzymano ./zad2 10 file.bin 10 z", następnie proces zostaje zatrzymany. Sygnału nie można zablokować.
+
+5. Wysłanie sygnału do wątku, w którym zmieniona jest procedura obsługi sygnału, jak przedstawiono w punkcie 3:
+	
+	SIGUSR1: Sygnał zostaje odebrany przez wątek, wyświetlone zostają informacje o PID i TID.
+	SIGTERM: Sygnał zostaje odebrany przez wątek, wyświetlone zostają informacje o PID i TID.
+	SIGKILL: Zostaje wypisany komunikat "Killed", następnie proces kończy swoje działanie. Sygnału nie można przechwycić.
+	SIGSTOP: Zostaje wypisany komunikat "[1]+  Zatrzymano ./zad2 10 file.bin 10 z", następnie proces zostaje zatrzymany. Sygnału nie można przechwycić.
+
+B:
+W momecie próby wykonania dzielenia przez 0 w jednym z wątków wywołany został sygnał SIGFPE, który po wykonaniu operacji zawartych w funkcji obsługi przerwania (wyświetleniu PID i TID), powrócił do momentu przed wystąpieniem sygnału, ponownie wykonując działanie, a w konsekwencji powodując ponowne wywołanie sygnału (program wpadł w nieskończoną pętlę). Wystąpienie sygnału nie miało wpływu na pozostałe wątki, które wykonały swoje zadanie.
